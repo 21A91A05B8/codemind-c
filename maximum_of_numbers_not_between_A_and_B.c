@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    int n,a[100],i,max=0,x,y,t,v=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    scanf("%d%d",&x,&y);
+    max=a[0];
+    for(i=0;i<n;i++)
+    {
+        if((a[i]<=x)||(a[i]>=y))
+        {
+            if(a[i]>max)
+            {
+                max=a[i];
+                v++;
+            }
+        }
+    }
+    if(v==0)
+    {
+        printf("-1");
+    }
+    else
+    printf("%d",max);
+}
