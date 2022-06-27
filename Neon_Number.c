@@ -19,5 +19,4 @@ int main()
     {
         printf("Not Neon Number");
     }
-    return 0;
 }
