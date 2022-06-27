@@ -1,7 +1,8 @@
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-    int sum=0,rev1=0,n,sq1,sq2,rev2=0;
+    int sum=0,rev1=0,sq1,sq2,rev2=0,n;
     scanf("%d",&n);
     sq1=n*n;
     while(n>0)
