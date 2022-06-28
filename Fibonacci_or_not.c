@@ -1,12 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int n,a,b,c;
+    int a,b,c,n;
     scanf("%d",&n);
     a=0;
     b=1;
     while(1)
     {
+        
         c=a+b;
         if(c==n)
         {
@@ -20,6 +21,7 @@ int main()
         }
         a=b;
         b=c;
+        
     }
     return 0;
 }
