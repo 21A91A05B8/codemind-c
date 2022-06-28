@@ -1,15 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int m,n,i,hcf=1,min;
-    scanf("%d%d",&m,&n);
-    min=m>n?n:m;
-    for(i=2;i<=min;i++)
+    int N,M;
+    scanf("%d%d",&N,&M);
+    while(N!=M)
     {
-        if(m%i==0 && n%i==0)
+        if(N>M)
         {
-            hcf=i;
+            N=N-M;
+        }
+        else
+        {
+            M=M-N;
         }
     }
-    printf("%d",hcf);
+    printf("%d",N);
 }
