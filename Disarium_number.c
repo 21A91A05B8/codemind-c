@@ -4,6 +4,8 @@ int main()
 {
     int num;
     
+    
+    
     scanf("%d",&num);
     int num1=num,c=0;
     while(num1!=0)
@@ -20,8 +22,12 @@ int main()
         num1/=10;
         c--;
     }
-   if(sum==num)
-    printf("True");
-   else
-    printf("False");
+    if(sum==num)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
 }
