@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int i,n,t,c=0,d,s=0,l=0;
+    int n,r,i,c,co,count,p;
     scanf("%d",&n);
-    t=n;
+    c=0;
     for(i=1;i<=n;i++)
     {
         if(n%i==0)
@@ -13,30 +13,36 @@ int main()
     }
     if(c==2)
     {
-        while(n)
+        count=0;
+        p=0;
+        while(n>0)
         {
-            int k=0;
-            d=n%10;
-            n=n/10;
-            l++;
-            for(i=1;i<=d;i++)
+            r=n%10;
+            n/=10;
+            co=0;
+            p++;
+            for(i=1;i<=r;i++)
             {
-                if(d%i==0)
+                if(r%i==0)
                 {
-                   k++; 
+                    co++;
                 }
             }
-            if(k==2)
+            if(co==2)
             {
-                s++;
+                count++;
             }
         }
+        if(count==p)
+        {
+            printf("Mega Prime");
+        }
+        else
+        {
+            printf("Not Mega Prime");
+        }
     }
-    if(s==l && c==2)
-    {
-        printf("Mega Prime");
-    }
-    else if(l!=s || c>2)
+    else
     {
         printf("Not Mega Prime");
     }
