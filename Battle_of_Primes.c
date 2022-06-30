@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n1,n2,c,p,s,i,j;
+    int n1,n2,c,s,i,j,p;
     scanf("%d%d",&n1,&n2);
     s=n1+n2;
     p=s;
@@ -20,7 +20,6 @@ int main()
         {
             printf("%d",p-s);
             break;
-            
         }
     }
 }
