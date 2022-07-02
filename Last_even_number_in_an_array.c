@@ -1,8 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,arr[100];
+    int n;
     scanf("%d",&n);
+    int arr[n],i;
     for(i=0;i<n;i++)
     {
         scanf("%d",&arr[i]);
@@ -11,9 +12,13 @@ int main()
     {
         if(arr[i]%2==0)
         {
-            printf("%d",arr[i]);
-            break;
+            //if(i%2!=0)
+            //{
+                printf("%d",arr[i]);
+                break;
+            //}        
         }
+        
     }
     
 }
