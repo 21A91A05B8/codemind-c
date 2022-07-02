@@ -14,13 +14,14 @@ int main()
     for(i=0;i<r;i++)
     {
         sum=0;
+        
         for(j=0;j<c;j++)
         {
             sum=sum+a[i][j];
         }
     
+    
         printf("%d ",sum);
     }
-    
 }
  
